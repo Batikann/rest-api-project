@@ -20,7 +20,7 @@ export const CountryCard = ({
         alt={name}
         className=" object-cover w-full h-52 rounded-t-sm"
       />
-      <div className="m-4 flex flex-col gap-2">
+      <div className="m-4 flex flex-col gap-2 p-6">
         <h2 className="text-base font-extrabold mb-3">{name}</h2>
         <p className="text-lg text-gray-300">
           <span className="font-semibold text-sm mr-1">Population:</span>
