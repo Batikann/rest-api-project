@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -12,6 +13,10 @@ export default {
       },
       fontFamily: {
         nunito: ['Nunito Sans', 'sans-serif'],
+      },
+      boxShadow: {
+        'custom-box-shadow': 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
+        'shadow-bottom': 'rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;',
       },
     },
   },

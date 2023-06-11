@@ -21,4 +21,23 @@
   .details-ul li span {
     @apply font-semibold text-base text-white;
   }
+  .link-btn {
+    @apply inline-flex rounded py-2 px-4 items-center bg-dark-blue gap-x-3 text-white dark:bg-white dark:text-v-dark-blue-text shadow-custom-box-shadow;
+  }
+
+  .right-side {
+    @apply text-white flex lg:flex-row flex-col md:justify-center md:items-center  lg:gap-52  gap-12;
+  }
+
+  ul {
+    @apply flex flex-col gap-2;
+  }
+
+  ul li span {
+    @apply mr-1 text-white font-semibold dark:text-v-dark-blue-text;
+  }
+
+  ul li {
+    @apply text-gray-300 dark:text-gray-700;
+  }
 }

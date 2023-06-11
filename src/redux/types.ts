@@ -1,4 +1,4 @@
-type Currencies = {
+export type Currencies = {
   code: string
   name: string
   symbol: string
