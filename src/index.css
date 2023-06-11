@@ -9,3 +9,16 @@
     @apply font-nunito;
   }
 }
+
+@layer components {
+  .details-ul {
+    @apply flex flex-col gap-y-2;
+  }
+
+  .details-ul li {
+    @apply flex items-center gap-1 text-gray-300;
+  }
+  .details-ul li span {
+    @apply font-semibold text-base text-white;
+  }
+}

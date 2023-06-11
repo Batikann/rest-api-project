@@ -1,4 +1,5 @@
 import { Countries } from '../redux/types'
+import { convertNameToPathName } from './pathUtils'
 
 export const searchCountry = (
   data: Countries[],
@@ -22,4 +23,11 @@ export const searchCountry = (
     default:
       return filteredArray
   }
+}
+
+export const getCountryDetail = (
+  data: Countries[],
+  name: string | undefined
+) => {
+  return data.filter((item) => convertNameToPathName(item.name) == name)[0]
 }
