@@ -11,7 +11,7 @@ export const CountryDetails = () => {
     (state) => state.countries.countries
   )
   const { name } = useParams()
-  const countryDetails = getCountryDetail(values, name)
+  const countryDetails: Countries = getCountryDetail(values, name)
 
   return (
     <div className="min-h-screen bg-v-dark-blue dark:bg-white">
@@ -29,7 +29,7 @@ export const CountryDetails = () => {
             alt={countryDetails.name}
             className="w-[520px] h-[340px] object-contain lg:object-fill "
           />
-          <div className="flex flex-col justify-center gap-8">
+          <div className="flex flex-col lg:justify-center   gap-8">
             <h2 className="font-extrabold text-2xl dark:text-v-dark-blue-text">
               {countryDetails.name}
             </h2>
@@ -92,16 +92,10 @@ export const CountryDetails = () => {
               </div>
             </div>
             <div className="flex flex-col lg:flex-row   lg:items-center mt-4">
-              <h3 className="text-base dark:text-v-dark-blue-text  font-semibold mr-2 mb-4 lg:mb-0">
-                Border Countries:
-              </h3>
-              <ul className="grid grid-cols-4 gap-4 md:grid-cols-6 ">
+              <h3 className="border-header">Border Countries:</h3>
+              <ul className="grid grid-cols-3 text-center gap-2 lg:grid-cols-4 ">
                 {countryDetails.borders?.map((item) => {
-                  return (
-                    <li className="bg-dark-blue py-1 px-4 text-sm dark:bg-white shadow-custom-box-shadow dark:text-v-dark-blue-text">
-                      {item}
-                    </li>
-                  )
+                  return <li className="border-items">{item}</li>
                 })}
               </ul>
             </div>

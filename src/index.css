@@ -26,7 +26,7 @@
   }
 
   .right-side {
-    @apply text-white flex lg:flex-row flex-col md:justify-center md:items-center  lg:gap-52  gap-12;
+    @apply text-white flex lg:flex-row flex-col lg:justify-center lg:items-center  lg:gap-20  gap-12;
   }
 
   ul {
@@ -39,5 +39,49 @@
 
   ul li {
     @apply text-gray-300 dark:text-gray-700;
+  }
+
+  .navbar-title {
+    @apply md:text-base text-sm font-semibold dark:text-dark-blue max-[320px]:hidden;
+  }
+
+  .navbar {
+    @apply flex justify-between py-8 lg:px-12 px-6 max-[320px]:px-3 items-center bg-dark-blue text-white dark:bg-white shadow-shadow-bottom;
+  }
+
+  .navbar-header {
+    @apply lg:text-xl text-base md:text-lg font-extrabold dark:text-dark-blue;
+  }
+
+  .border-items {
+    @apply bg-dark-blue py-1 px-4 text-sm dark:bg-white shadow-custom-box-shadow dark:text-v-dark-blue-text;
+  }
+
+  .border-header {
+    @apply text-base dark:text-v-dark-blue-text  font-semibold mr-2 mb-4 lg:mb-0;
+  }
+
+  .select-box {
+    @apply bg-dark-blue xl:w-[200px] lg:w-full max-[320px]:w-full shadow-custom-box-shadow dark:bg-white dark:text-v-dark-blue-text  text-white p-4 text-base rounded-sm;
+  }
+
+  .countryCard-container {
+    @apply grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 gap-12 md:gap-8 w-full;
+  }
+
+  .countryCard {
+    @apply bg-dark-blue dark:bg-white dark:text-v-dark-blue-text text-white text-xs rounded-sm shadow-custom-box-shadow lg:hover:scale-110 lg:hover:cursor-pointer;
+  }
+
+  .p-header {
+    @apply font-semibold text-base mr-1 dark:text-v-dark-blue-text;
+  }
+
+  .showcaseInput {
+    @apply bg-dark-blue  dark:bg-white shadow-custom-box-shadow dark:text-v-dark-blue py-4 px-14 lg:w-[500px] w-full rounded-md text-white outline-none text-lg;
+  }
+
+  .search-icon {
+    @apply absolute text-white bottom-1/2 translate-y-1/2 left-4 dark:text-v-dark-blue-text dark:shadow-xl;
   }
 }
