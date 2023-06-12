@@ -16,7 +16,7 @@ export const CountryDetails = () => {
   return (
     <div className="min-h-screen bg-v-dark-blue dark:bg-white w-full">
       <Navbar />
-      <div className="p-12 w-full flex flex-col gap-16 2xl:justify-between">
+      <div className="p-12 w-full flex flex-col gap-16 ">
         <div className="left-side">
           <Link to="/" className="link-btn">
             <BsArrowLeft size={25} />
@@ -27,7 +27,7 @@ export const CountryDetails = () => {
           <img
             src={countryDetails.flag}
             alt={countryDetails.name}
-            className="w-[520px] h-[340px] object-contain lg:object-fill "
+            className="w-[520px] h-[340px] 2xl:w-[800px] 2xl:h-[500px] object-contain lg:object-fill "
           />
           <div className="flex flex-col lg:justify-center   gap-8">
             <h2 className="font-extrabold text-2xl dark:text-v-dark-blue-text">
