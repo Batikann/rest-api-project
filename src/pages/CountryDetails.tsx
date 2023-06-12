@@ -16,7 +16,7 @@ export const CountryDetails = () => {
   return (
     <div className="min-h-screen bg-v-dark-blue dark:bg-white">
       <Navbar />
-      <div className="p-12 w-full flex flex-col gap-16">
+      <div className="p-12 w-full flex flex-col gap-16 2xl:justify-between">
         <div className="left-side">
           <Link to="/" className="link-btn">
             <BsArrowLeft size={25} />
