@@ -14,7 +14,7 @@ export const CountryDetails = () => {
   const countryDetails: Countries = getCountryDetail(values, name)
 
   return (
-    <div className="min-h-screen bg-v-dark-blue dark:bg-white">
+    <div className="min-h-screen bg-v-dark-blue dark:bg-white w-full">
       <Navbar />
       <div className="p-12 w-full flex flex-col gap-16 2xl:justify-between">
         <div className="left-side">
